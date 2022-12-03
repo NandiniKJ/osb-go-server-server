@@ -112,8 +112,8 @@ func ServiceInstanceProvision(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		log.Fatalf("Error happened in JSON marshal. Err: %s", err)
 	}
-	//CreateTenantNew()
-	//CreateAdminTenant()
+	CreateTenantNew()
+	CreateAdminTenant()
 	w.Write(jsonResp)
 }
 
